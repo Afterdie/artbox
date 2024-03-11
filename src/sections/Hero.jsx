@@ -53,10 +53,15 @@ export default function Hero() {
           <HeroMain />
         </SwiperSlide>
       </Swiper>
-      <div className="mt-10 flex items-center justify-between border-2 border-slate-500 p-10">
-        {modelsTab.map((item, index) => {
-          return <HeroModels key={index} label={item.label} />;
-        })}
+      <div className="relative mt-10 border-2 border-slate-500 p-8">
+        <h1 className="absolute inset-0 left-[50%]">
+          Shop from a big selection
+        </h1>
+        <div className="flex items-center justify-between gap-4">
+          {modelsTab.map((item, index) => {
+            return <HeroModels key={index} ind={index} label={item.label} />;
+          })}
+        </div>
       </div>
     </div>
   );
