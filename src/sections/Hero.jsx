@@ -54,7 +54,7 @@ export default function Hero() {
         </SwiperSlide>
       </Swiper>
       <div className="relative mt-10 border-2 border-slate-500 p-8">
-        <h1 className="absolute left-[50%] translate-x-[-50%] text-[20px] font-bold">
+        <h1 className="absolute left-0 top-0 translate-x-[20%] translate-y-[-50%] bg-white p-2 font-bold">
           Shop from a big selection
         </h1>
         <div className="flex items-center justify-between gap-4">
